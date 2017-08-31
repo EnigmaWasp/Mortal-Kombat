@@ -1,0 +1,31 @@
+
+
+; Player information
+[Info]
+name = "cyrax"
+displayname = "cyrax"
+versiondate = 06,03,2001    ;Version date of character
+mugenversion = 04,01,2001   ;Version of M.U.G.E.N character works on
+pal.defaults = 1,2   
+
+; Files for the player
+[Files]
+cmd      = 1.cmd   ;Command set
+cns      = 1.cns   ;Constants
+st       = 1.cns   ;States
+st2      = sp.st ;Specials
+st5      = Fatality.st
+stcommon = common1.cns     ;Common states
+sprite   = 1.sff   ;Sprite
+anim     = 1.air   ;Animation
+sound   = 1.snd   ;Sound
+pal1     = 1.act   ;Palettes (blue)
+pal2     = 2.act   ;Palettes (red)
+
+; Arcade mode
+
+[Arcade]
+;intro.storyboard = intro.def
+;ending.storyboard = ending.def
+
+
