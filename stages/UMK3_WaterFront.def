@@ -1,0 +1,132 @@
+;--------------------------------------------------------
+; Stage      : WaterFront UMK3
+; Version    : 1.0
+; Autor      : RatonMalo
+; Mail       : elratonmalo@hotmail.com
+; Web        : http://www.geocities.jp/ratonmalo_ar/
+;--------------------------------------------------------
+
+[Info]
+name           = "WaterFront"
+
+;--------------------------------------------------------
+
+[Camera]
+startx         = 0
+starty         = 0
+boundleft      = -392
+boundright     = 391
+boundhigh      = -30
+boundlow       =  0
+verticalfollow = .3
+;floortension  = 50
+tension        = 50
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx       = -70
+p1starty       = 0
+p1startz       = 0
+p1facing       = 1
+
+p2startx       = 70
+p2starty       = 0
+p2startz       = 0
+p2facing       = -1
+
+leftbound      = -1000 
+rightbound     =  1000 
+topbound       =  0
+botbound       =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz           = 0       
+botz           = 50     
+topscale       = 1       
+botscale       = 1.2     
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft     = 15
+screenright    = 15
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset        = 230
+autoturn       = 1
+resetBG        = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+color          = 64,64,64
+yscale         = -.2
+reflect        = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound\mk31.mp3
+bgvolume       = 255
+
+;--------------------------------------------------------
+
+[BGdef]
+spr            = stages/UMK3_WaterFront.sff
+debugbg        = 0
+
+;--------------------------------------------------------
+
+[BG Cielo]
+type           = normal
+spriteno       = 0,3
+delta          = .15,1
+
+[BG Agua]
+type           = anim
+actionno       = 1
+start          = 23,130
+delta          = .42,1
+tile           = 1,0
+tilespacing    = 68,0
+mask           = 1
+
+[BG Pared]
+type           = normal
+spriteno       = 0,0
+delta          = .42,1
+mask           = 1
+
+[BG Puente]
+type           = normal
+spriteno       = 0,1
+start          = -134,5
+delta          = .70,1
+mask           = 1
+
+[BG Piso]
+type           = normal
+spriteno       = 0,2
+start          = 0,1
+delta          = 1,1
+mask           = 1
+
+;--------------------------------------------------------
+
+[Begin action 1]
+
+1,0, 0,0, 8
+1,1, 0,0, 8
+1,2, 0,0, 8
+1,3, 0,0, 8
+1,4, 0,0, 8
+1,5, 0,0, 8
+1,6, 0,0, 8
+1,8, 0,0, 8
+
+;--------------------------------------------------------

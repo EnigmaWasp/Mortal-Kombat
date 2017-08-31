@@ -1,0 +1,99 @@
+[Info]
+name = "Pit 3"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -439
+boundright = 435
+;boundleft = -397
+;boundright = 381
+boundhigh = -20
+boundlow = 0
+verticalfollow = .2
+floortension = 50
+tension = 50
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 205
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 150,150,150
+yscale = -.1
+
+[Music]
+bgmusic = sound\mk31.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/pit3.sff
+debugbg = 0
+
+[BG 1]
+type  = normal
+spriteno = 0, 0
+delta = .1, 1
+tile = 1, 1
+
+[BG 2]
+type  = normal
+spriteno = 1, 0
+delta = .4, 1
+mask  = 1
+
+[BG 3]
+type  = anim
+actionno = 1
+delta = .4, 1
+
+[BG 4]
+type  = normal
+spriteno = 2, 0
+delta = .2, 1
+mask  = 1
+
+[BG 5]
+type  = normal
+spriteno = 2, 0
+start = 138, 0
+delta = .2, 1
+mask  = 1
+
+[BG 6]
+type  = normal
+spriteno = 3, 0
+mask  = 1
+
+[BG 7]
+type  = normal
+spriteno = 4, 0
+mask  = 1
+
+[Begin Action 1]
+1,0, 0,0, -1, H

@@ -1,0 +1,229 @@
+;--------------------------------------------------------
+; Stage   : The Temple MK3
+; Version : 1.1
+; Autor   : RatonMalo
+; Mail    : elratonmalo@hotmail.com
+; Web     : http://www.geocities.jp/ratonmalo_ar/
+;--------------------------------------------------------
+
+[Info]
+name = "The Temple"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -300
+boundright = 300
+boundhigh = -20
+boundlow =  0
+verticalfollow = .2
+;floortension = 50
+tension = 50
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -700 
+rightbound =  700 
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+color = 64,64,64
+yscale = -.2
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound\mk31.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = stages/MK3_Temple.sff
+debugbg = 0
+
+;--------------------------------------------------------
+
+[BG Fondo]
+type  = normal
+spriteno = 0,0
+start = 0, 13
+delta = .50,.75
+mask  = 0
+
+[BG Columna]
+type  = normal
+spriteno = 0,1
+start = 0, 10
+delta = .70,1
+mask  = 1
+
+[BG Candeladro]
+type  = normal
+spriteno = 0,2
+start = 0, 10
+delta = .65,1
+mask  = 1
+
+[BG Fuego-Izq-1]
+type  = anim
+actionno = 1
+delta = .65, 1
+start = 0,10
+
+[BG Fuego-Izq-2]
+type  = anim
+actionno = 1
+delta = .65, 1
+start = -150,10
+
+[BG Fuego-Der-1]
+type  = anim
+actionno = 2
+delta = .65, 1
+start = -1,10
+
+[BG Fuego-Der-2]
+type  = anim
+actionno = 2
+delta = .65, 1
+start = 149,10
+
+[BG Mesa]
+type  = normal
+spriteno = 0,3
+start = 0, 10
+delta = .69,1
+mask  = 1
+
+[BG Stage]
+type  = normal
+spriteno = 0,4
+start = 0, 10
+delta = 1,1
+mask  = 1
+
+[BG Vela -4]
+type  = anim
+actionno = 4
+delta = 1.50, 1
+start = -600,245
+layerno = 1
+
+[BG Vela -3]
+type  = anim
+actionno = 4
+delta = 1.50, 1
+start = -450,245
+layerno = 1
+
+[BG Vela -2]
+type  = anim
+actionno = 4
+delta = 1.50, 1
+start = -300,245
+layerno = 1
+
+[BG Vela -1]
+type  = anim
+actionno = 4
+delta = 1.50, 1
+start = -150,245
+layerno = 1
+
+[BG Vela 0]
+type  = anim
+actionno = 4
+delta = 1.50, 1
+start = 0,245
+layerno = 1
+
+[BG Vela 1]
+type  = anim
+actionno = 4
+delta = 1.50, 1
+start = 150,245
+layerno = 1
+
+[BG Vela 2]
+type  = anim
+actionno = 4
+delta = 1.50, 1
+start = 300,245
+layerno = 1
+
+[BG Vela 3]
+type  = anim
+actionno = 4
+delta = 1.50, 1
+start = 450,245
+layerno = 1
+
+[BG Vela 4]
+type  = anim
+actionno = 4
+delta = 1.50, 1
+start = 600,245
+layerno = 1
+
+[Begin action 1]
+1,0, 0,0, 7
+1,1, 0,0, 7
+1,2, 0,0, 7
+1,3, 0,0, 7
+1,4, 0,0, 7
+1,5, 0,0, 7
+
+[Begin action 2]
+1,0, 0,0, 7, H
+1,1, 0,0, 7, H
+1,2, 0,0, 7, H
+1,3, 0,0, 7, H
+1,4, 0,0, 7, H
+1,5, 0,0, 7, H
+
+[Begin action 4]
+2,0, 0,0, 7
+2,1, 0,0, 7
+2,2, 0,0, 7
+2,3, 0,0, 7
+
+;--------------------------------------------------------

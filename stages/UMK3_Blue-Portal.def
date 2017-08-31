@@ -1,0 +1,105 @@
+;--------------------------------------------------------
+; Stage   : Blue Portal UMK3
+; Autor   : RatonMalo
+; Mail    : elratonmalo@hotmail.com
+; Web     : http://www.geocities.jp/ratonmalo_ar/
+; Version : 1.0
+;--------------------------------------------------------
+
+[Info]
+name = "Blue Portal"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -350
+boundright = 350
+boundhigh = -30
+boundlow =  -1
+verticalfollow = .2
+;floortension = 50
+tension = 50
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+color = 0,0,0
+yscale = -.2
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound\mk31.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = stages/UMK3_Blue-Portal.sff
+debugbg = 0
+
+;--------------------------------------------------------
+
+[BG Fondo]
+type  = norm
+spriteno = 0,1
+delta = .110,1
+tile = 0,1
+mask = 0
+
+[BG montaña]
+type = norm
+spriteno = 0, 0
+delta = .380,1
+mask = 1
+
+[BG Piso]
+type = norm
+spriteno = 0, 2
+delta = 1,1
+tile = 1,0
+mask = 1
+
+;--------------------------------------------------------

@@ -1,0 +1,293 @@
+;--------------------------------------------------------
+; Stage      : The Bridge MK3
+; Autor      : RatonMalo
+; Mail       : elratonmalo@hotmail.com
+; Web        : http://www.geocities.jp/ratonmalo_ar/
+; Version    : 1.2
+; Updated by : BlackJack
+;--------------------------------------------------------
+
+[Info]
+name = "The Bridge"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -357
+boundright = 357
+boundhigh = -30
+boundlow =  0
+verticalfollow = .2
+;floortension = 50
+tension = 50
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+color = 64,64,64
+yscale = -.2
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound\mk31.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = stages/MK3_Bridge.sff
+debugbg = 0
+
+;--------------------------------------------------------
+
+[BG Fondo]
+type  = normal
+spriteno = 0,1
+start = -10,0
+delta = .10,1
+mask  = 1
+
+[BG Edi.Izq]
+type  = normal
+spriteno = 0,2
+start = 0,0
+delta = .70,1
+mask  = 1
+
+[BG Stage]
+type  = normal
+spriteno = 0,0
+start = 0,0
+delta = 1,1
+mask  = 1
+
+;added by BlackJack
+===================
+[BG Light]
+type  = anim
+actionno = 6
+start = -507,35
+tile = 1, 0
+tilespacing = 995
+
+[Begin action 6]
+-1,0,0,0,1
+5,0,0,0,1,,A1
+===================
+
+[BG paperflap1]
+type  = anim
+actionno = 3
+start = 90, 20
+delta = 1, 1
+
+[BG paperflap2]
+type  = anim
+actionno = 3
+start = 300, 16
+delta = 1, 1
+
+[BG paperflap3]
+type  = anim
+actionno = 3
+start = -191, 16
+delta = 1, 1
+
+[BG paperinwindlarge]
+type = anim
+actionno = 4
+start = 0, 200
+velocity = 1.1
+tile = 1
+tilespacing = 800
+sin.x = -20, 570
+sin.y = -50, 212
+delta = .6,.8
+layerno = 1
+
+[BG paperinwindlarge]
+type = anim
+actionno = 4
+start = 0, 20
+velocity = 2
+tile = 1
+tilespacing = 1020
+sin.x = -50, 340
+sin.y = 30, 212
+delta = .6,.8
+
+[BG paperinwindlarge]
+type = anim
+actionno = 4
+start = 0, 170
+velocity = 3
+tile = 1
+tilespacing = 730
+sin.x = 100, 530
+sin.y = -50, 200
+delta = .6,.8
+
+[BG paperinwindsmall]
+type = anim
+actionno = 5
+start = 0, 90
+velocity = .9
+tile = 1
+tilespacing = 650
+sin.x = 50, 125
+sin.y = -100, 125
+delta = .6,.8
+
+[BG paperinwindsmall]
+type = anim
+actionno = 5
+start = 0, 210
+velocity = 1
+tile = 1
+tilespacing = 850
+sin.x = -70, 280
+sin.y = -50, 500
+delta = .6,.8
+
+[BG paperinwindsmall]
+type = anim
+actionno = 5
+start = 0, 200
+velocity = 1.1
+tile = 1
+tilespacing = 750
+sin.x = 20, 570
+sin.y = -50, 212
+delta = .6,.8
+
+[BG paperinwindsmall]
+type = anim
+actionno = 5
+start = 0, 190
+velocity = 1.2
+tile = 1
+tilespacing = 550
+sin.x = -50, 355
+sin.y = 100, 125
+delta = .6,.8
+layerno = 1
+
+[BG leafinwind1]
+type = anim
+actionno = 2
+start = 0, 158
+velocity = 1
+tile = 1
+tilespacing = 500
+sin.x = -70, 850
+sin.y = -20, 500
+delta = .6,.8
+layerno = 1
+
+[BG leafinwind2]
+type = anim
+actionno = 2
+start = 0, 108
+velocity = 2
+tile = 1
+tilespacing = 400
+sin.x = 10, 500
+sin.y = -100, 852
+delta = .6,.8
+
+[BG leafinwind3]
+type = anim
+actionno = 2
+start = 0, 208
+velocity = 2.1
+tile = 1
+tilespacing = 600
+sin.x = -20, 500
+sin.y = -50, 952
+delta = .6,.8
+
+;--------------------------------------------------------
+
+[Begin Action 2]
+4,0, 0,0, 15
+4,1, 0,0, 15
+4,2, 0,0, 15
+4,3, 0,0, 15
+4,4, 0,0, 15
+4,5, 0,0, 15
+4,6, 0,0, 15
+
+[Begin Action 3]
+4,7, 0,0, 5
+4,8, 0,0, 5
+4,9, 0,0, 5
+4,10, 0,0, 5
+4,11, 0,0, 5
+4,12, 0,0, 5
+
+[Begin Action 4]
+4,13, 0,0, 15
+4,14, 0,0, 15
+4,15, 0,0, 15
+4,16, 0,0, 15
+4,17, 0,0, 15
+4,18, 0,0, 15
+4,19, 0,0, 15
+4,20, 0,0, 15
+4,14, 0,0, 15
+
+[Begin Action 5]
+4,21, 0,0, 10
+4,22, 0,0, 10
+4,23, 0,0, 10
+4,24, 0,0, 10
+4,25, 0,0, 10
+4,26, 0,0, 10
+4,27, 0,0, 10
+4,28, 0,0, 10
+4,22, 0,0, 10
+
+;--------------------------------------------------------

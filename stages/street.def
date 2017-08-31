@@ -1,0 +1,283 @@
+
+[Info]
+name = "THE STREET"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -335
+boundright = 335
+boundhigh = -26
+boundlow = 0
+verticalfollow = .3
+floortension = 30
+tension = 50
+
+[PlayerInfo]
+p1startx = -77
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 77
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 150,150,150
+yscale = -.3
+
+
+[Music]
+bgmusic = sound\mk31.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/street.sff
+debugbg = 0
+
+[BG farback]
+type  = normal
+spriteno = 0, 0
+delta = 0, 1
+
+[BG portal]
+type  = anim
+actionno = 1
+delta = 0, 1
+
+[BG 00]
+type  = normal
+spriteno = 1, 0
+delta = .7, 1
+mask  = 1
+
+[BG 11]
+type  = normal
+spriteno = 2, 0
+delta = .8, 1
+
+[BG 22]
+type  = normal
+spriteno = 2, 1
+delta = .8, 1
+tile = 1
+tilespacing = 406
+mask  = 1
+
+[BG 33]
+type  = anim
+actionno = 3
+delta = .8, 1
+
+[BG 44]
+type  = anim
+actionno = 3
+start = 131, 1
+delta = .8, 1
+
+[BG 55]
+type  = anim
+actionno = 3
+start = 353, -2
+delta = .8, 1
+
+[BG 66]
+type  = anim
+actionno = 3
+start = -191, 0
+delta = .8, 1
+
+[BG 77]
+type  = parallax
+spriteno = 3, 0
+delta = .8, 1
+xscale = .8, 1.1
+yscalestart = 100
+
+[BG 88]
+type = anim
+actionno = 4
+start = 0, 200
+velocity = 1.1
+tile = 1
+tilespacing = 800
+sin.x = -20, 570
+sin.y = -50, 212
+delta = .6,.8
+layerno = 1
+
+[BG 99]
+type = anim
+actionno = 4
+start = 0, 20
+velocity = 2
+tile = 1
+tilespacing = 1020
+sin.x = -50, 340
+sin.y = 30, 212
+delta = .6,.8
+
+[BG 111]
+type = anim
+actionno = 4
+start = 0, 170
+velocity = 3
+tile = 1
+tilespacing = 730
+sin.x = 100, 530
+sin.y = -50, 200
+delta = .6,.8
+
+[BG 222]
+type = anim
+actionno = 5
+start = 0, 90
+velocity = .9
+tile = 1
+tilespacing = 650
+sin.x = 50, 125
+sin.y = -100, 125
+delta = .6,.8
+
+[BG 333]
+type = anim
+actionno = 5
+start = 0, 210
+velocity = 1
+tile = 1
+tilespacing = 850
+sin.x = -70, 280
+sin.y = -50, 500
+delta = .6,.8
+
+[BG paperinwindsmall]
+type = anim
+actionno = 5
+start = 0, 200
+velocity = 1.1
+tile = 1
+tilespacing = 750
+sin.x = 20, 570
+sin.y = -50, 212
+delta = .6,.8
+
+[BG 444]
+type = anim
+actionno = 5
+start = 0, 190
+velocity = 1.2
+tile = 1
+tilespacing = 550
+sin.x = -50, 355
+sin.y = 100, 125
+delta = .6,.8
+
+[BG 555]
+type = anim
+actionno = 2
+start = 0, 158
+velocity = 1
+tile = 1
+tilespacing = 500
+sin.x = -70, 850
+sin.y = -20, 500
+delta = .6,.8
+layerno = 1
+
+[BG 666]
+type = anim
+actionno = 2
+start = 0, 108
+velocity = 2
+tile = 1
+tilespacing = 400
+sin.x = 10, 500
+sin.y = -100, 852
+delta = .6,.8
+
+[BG 777]
+type = anim
+actionno = 2
+start = 0, 208
+velocity = 2.1
+tile = 1
+tilespacing = 600
+sin.x = -20, 500
+sin.y = -50, 952
+delta = .6,.8
+
+
+[Begin Action 1]
+0,1, 0,0, 5
+0,2, 0,0, 5
+0,3, 0,0, 5
+0,4, 0,0, 5
+0,5, 0,0, 5
+0,6, 0,0, 5
+0,7, 0,0, 5
+0,8, 0,0, 5
+0,9, 0,0, 5
+0,10, 0,0, 5
+
+
+[Begin Action 2]
+4,0, 0,0, 15
+4,1, 0,0, 15
+4,2, 0,0, 15
+4,3, 0,0, 15
+4,4, 0,0, 15
+4,5, 0,0, 15
+4,6, 0,0, 15
+
+
+[Begin Action 3]
+4,7, 0,0, 3
+4,8, 0,0, 3
+4,9, 0,0, 3
+4,10, 0,0, 3
+4,11, 0,0, 3
+4,12, 0,0, 3
+
+
+[Begin Action 4]
+4,13, 0,0, 12
+4,14, 0,0, 12
+4,15, 0,0, 12
+4,16, 0,0, 12
+4,17, 0,0, 12
+4,18, 0,0, 12
+4,19, 0,0, 12
+4,20, 0,0, 12
+4,14, 0,0, 12
+
+
+[Begin Action 5]
+4,21, 0,0, 8
+4,22, 0,0, 8
+4,23, 0,0, 8
+4,24, 0,0, 8
+4,25, 0,0, 8
+4,26, 0,0, 8
+4,27, 0,0, 8
+4,28, 0,0, 8
+4,22, 0,0, 8

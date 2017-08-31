@@ -1,0 +1,171 @@
+;BY: 	Doorhenge
+;EMAIL:	doorhenge@hotmail.com
+;WEB:	http://members.citynet.net/doorhenge/
+[Info]
+name = "Goro's Lair"
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -250
+boundright = 500
+boundhigh = -95
+boundlow = 0
+verticalfollow = .3
+floortension = 0
+tension = 60
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -70          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+;--- Common ---
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+;--------------------------------------------------------
+[Scaling]
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+;--------------------------------------------------------
+[Bound]
+screenleft = 15    ;Dist from left of screen that player can move to
+screenright = 15   ;Right edge
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 0
+;--------------------------------------------------------
+[Shadow]
+color = 100,100,100
+yscale = -0.3
+reflect = 0
+;--------------------------------------------------------
+[Music]
+;bgmusic = 8.da
+bgmusic = sound\mk31.mp3
+bgvolume = 255
+;-------------------------------------
+[BGdef]
+spr = stages/glair.sff
+debugbg = 0
+;----------
+[bg black]
+type  = normal
+spriteno = 0, 0
+delta = 0, 0
+tile = 1, 1
+
+[bg floor]
+type  = parallax
+spriteno = 2, 0
+tile = 1, 0
+width = 70, 110
+start = -30, 191
+delta = .72, .9
+yscaledelta = .2
+
+[bg backwall]
+type  = normal
+spriteno = 1, 0
+layerno = 0
+start = -110, 45
+delta = .76, .81
+mask  = 1
+tile  = 1, 0
+
+[bg eye1]
+type  = anim
+actionno = 1
+layerno = 0
+start = -60, 125
+delta = .7, .8
+
+[bg eye2]
+type  = anim
+actionno = 2
+layerno = 0
+start = -100, 130
+delta = .7, .8
+
+[bg eye3]
+type  = anim
+actionno = 3
+layerno = 0
+start = -150, 120
+delta = .7, .8
+
+[bg eye4]
+type  = anim
+actionno = 1
+layerno = 0
+start = 350, 125
+delta = .7, .8
+
+[bg eye5]
+type  = anim
+actionno = 2
+layerno = 0
+start = 160, 130
+delta = .7, .8
+
+[bg eye6]
+type  = anim
+actionno = 3
+layerno = 0
+start = 210, 120
+delta = .7, .8
+
+[bg frontwall]
+type  = normal
+spriteno = 3, 0
+layerno = 0
+start = 0, 57
+delta = .86, .9
+mask  = 1
+tile  = 1, 0
+
+[bg foreground]
+type  = normal
+spriteno = 5, 0
+layerno = 0
+start = 200, 232
+delta = 1.12, 1.13
+mask  = 1
+
+;eye1
+[Begin Action 1]
+4,0, 0,0, 110
+4,1, 0,0, 10
+4,2, 0,0, 110
+4,3, 0,0, 100
+4,2, 0,0, 100
+4,1, 0,0, 10
+
+;eye2
+[Begin Action 2]
+4,2, 0,0, 100
+4,3, 0,0, 120
+4,2, 0,0, 100
+4,1, 0,0, 10
+4,0, 0,0, 100
+4,1, 0,0, 10
+
+;eye3
+[Begin Action 3]
+4,3, 0,0, 100
+4,2, 0,0, 140
+4,1, 0,0, 10
+4,0, 0,0, 100
+4,1, 0,0, 10
+4,2, 0,0, 110

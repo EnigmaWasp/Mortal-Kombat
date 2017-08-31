@@ -1,0 +1,123 @@
+;--------------------------------------------------------
+; Stage   : The Portal MK3
+; Autor   : RatonMalo
+; Mail    : elratonmalo@hotmail.com
+; Web     : http://www.geocities.jp/ratonmalo_ar/
+; Version : 1.1
+;--------------------------------------------------------
+
+[Info]
+name = "The Portal MK3"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -310
+boundright = 310
+boundhigh = -15
+boundlow =  -1
+verticalfollow = .2
+;floortension = 50
+tension = 50
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+color = 0,0,0
+yscale = 0
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound\mk31.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = stages/MK3_Portal.sff
+debugbg = 0
+
+;--------------------------------------------------------
+
+[BG Fondo]
+type  = norm
+spriteno = 0,0
+delta = .110,1
+mask = 0
+
+[BG Rayo]
+type  = anim
+actionno = 0
+delta = .110, 1
+start = -39,70
+
+[BG Piso]
+type = norm
+spriteno = 0, 1 
+delta = 1,1
+tile = 1,0
+mask = 1
+
+;--------------------------------------------------------
+
+[Begin action 0]
+1,0, 0,0, 7
+1,1, 0,0, 7
+1,2, 0,0, 7
+1,3, 0,0, 7
+1,4, 0,0, 7
+1,5, 0,0, 7
+1,6, 0,0, 7
+1,7, 0,0, 7
+1,8, 0,0, 7
+1,9, 0,0, 7
+1,10, 0,0, 7
+1,11, 0,0, 7
+1,12, 0,0, 7
+1,13, 0,0, 7
+1,14, 0,0, 100
+
+;--------------------------------------------------------

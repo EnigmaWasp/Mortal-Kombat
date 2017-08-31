@@ -1,0 +1,132 @@
+[Info]
+name = "Bell Tower"
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -350
+boundright = 300
+boundhigh = -45
+boundlow = 0
+verticalfollow = .30
+floortension = 0
+tension = 80
+boundhigh = -180
+boundlow = 100
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -80          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+;--- Player 2 ---
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+;--- Common ---
+leftbound  = -1100 ;Left bound (x-movement)
+rightbound =  1100 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+;--------------------------------------------------------
+[Scaling]
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+;--------------------------------------------------------
+[Bound]
+screenleft = 30    ;Dist from left of screen that player can move to
+screenright = 30   ;Right edge
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 182
+autoturn = 1
+resetBG = 0
+;--------------------------------------------------------
+[Shadow]
+color = 0,0,0
+yscale = 0
+reflect = 0
+;--------------------------------------------------------
+[Music]
+
+bgmusic = sound\mk31.mp3
+bgvolume = 255
+
+;-------------------------------------
+[BGdef]
+spr = stages/bell.sff
+debugbg = 0
+;----------
+[BG Bridge]
+type  = normal
+spriteno = 4, 0
+delta = .2,.5                
+start = -150, 295
+mask = 0
+
+;[BG Scorpion]
+;type  = anim
+;actionno = 0
+;start = -900, 223
+;tile = 1, 0
+;tilespacing = 2000,
+;velocity = 1.7, 0
+
+;[BG FrontLeft c2]
+;type  = normal
+;spriteno = 5, 3
+;start = 0, 201 
+;tile = 1, 0
+;delta = .3,0                
+;tilespacing = 100,
+;mask = 1
+
+
+;[BG FrontLeft c1]
+;type  = normal
+;spriteno = 5, 4
+;start = 80, 196
+;tile = 1, 0
+;delta = .35,0                
+;tilespacing = 160,
+;mask = 1
+
+
+;[BG FrontLeft c2]
+;type  = normal
+;spriteno = 5, 2
+;start = -20, 202
+;tile = 1, 0
+;delta = .45,0                
+;tilespacing = 270,
+;mask = 1
+
+
+[BG FrontLeft]
+type  = normal
+spriteno = 4, 1
+start = -150, 168
+delta = .85, .82               
+mask = 1
+
+[BG FrontLeftczaszka]
+type  = normal
+spriteno = 5, 5
+start = -150, 167
+mask = 1
+layerno = 1
+
+[BG FrontLeft c1]
+type  = normal
+spriteno = 5, 0
+start = -180, -68
+tile = 1, 0
+delta = .85,.7                
+tilespacing = 270,
+mask = 1
+layerno = 1
+
+
